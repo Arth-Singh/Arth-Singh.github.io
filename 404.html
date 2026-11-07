@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<script>
+// Links to the old project page (any file or anchor under /jailbreak-judge-bench) go to its new address.
+(function () {
+  var old = "/jailbreak-judge-bench";
+  var path = location.pathname;
+  if (path === old || path.indexOf(old + "/") === 0) {
+    location.replace("/paper-tigers" + path.slice(old.length) + location.search + location.hash);
+  }
+})();
+</script>
+</head>
+<body>
+<p>Page not found. The Paper Tigers project page is at <a href="https://arth-singh.github.io/paper-tigers/">arth-singh.github.io/paper-tigers</a>.</p>
+</body>
+</html>
